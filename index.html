@@ -120,6 +120,9 @@
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Schedule</h2>
                 <hr class="divider" />
+                <p id="cal-loading" class="text-center">
+                    <strong>Calendar loading... please wait...</strong>
+                </p>
                 <iframe
                     src="https://calendar.zoho.com/zc/ui/embed/#calendar=zz08011230c53feccdaef9312bfbdb7105d665cd20943c6de9a007bc60f73e17eb92e52c78eb6282048f87d578d80dfd23aa40d121&title=Club%20schedule&type=1&language=en&timezone=America%2FDetroit&showTitle=1&showTimezone=1&startingDayOfWeek=0&timeFormat=0&view=month&showDetail=0&theme=1&showAttendee=0&showSwitchingViews=1&expandAllday=0&eventColorType=light&showAllEvents=0"
                     title="Club schedule"
@@ -127,9 +130,15 @@
                     height="700"
                     frameborder="0"
                     scrolling="no"
+                    id="cal"
                 ></iframe>
+                <script>
+                    document.getElementById("cal").onload = function () {
+                        document.getElementById("cal-loading").remove();
+                    };
+                </script>
                 <p class="mt-3">
-                    Board and clocks are provided but bring your own if you
+                    Boards and clocks are provided but bring your own if you
                     have. There's no entry fee or cover charge to attend or
                     play.
                 </p>
