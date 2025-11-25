@@ -11549,3 +11549,13 @@ header.masthead .h1 {
 #social i.bi {
     font-size: 3em;
 }
+
+.puzzle-difficulty {
+    font-size: 16px !important;
+    padding: 5px !important;
+}
+
+#puzzle-container {
+    width: fit-content;
+    margin: 0 auto;
+}

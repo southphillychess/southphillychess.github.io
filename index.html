@@ -387,12 +387,31 @@
                             ></a>
                         </p>
                         <div class="text-center">
-                            <iframe
-                                src="https://lichess.org/training/frame?theme=brown&bg=dark"
-                                style="width: 400px; aspect-ratio: 10/11"
-                                allowtransparency="true"
-                                frameborder="0"
-                            ></iframe>
+                            <div id="puzzle">
+                                <strong>Puzzle of the day:</strong>
+                                <div id="puzzle-container">
+                                    <link
+                                        id="puzzleCss"
+                                        type="text/css"
+                                        rel="stylesheet"
+                                        href="https://chesstempo.com/css/dailypuzzle.css"
+                                    />
+                                    <script
+                                        type="text/javascript"
+                                        src="https://chesstempo.com/js/dailypuzzle.js"
+                                    ></script>
+                                    <script>
+                                        new Puzzle({
+                                            pieceSize: 55,
+                                            squareColorClass: "-brown",
+                                            showCoordinates: false,
+                                        });
+                                    </script>
+                                </div>
+                                <a id="ct-link" href="https://chesstempo.com/"
+                                    >More puzzles</a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
