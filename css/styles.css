@@ -11559,3 +11559,7 @@ header.masthead .h1 {
     width: fit-content;
     margin: 0 auto;
 }
+
+#puzzle-moveIndicators {
+    display: none;
+}
