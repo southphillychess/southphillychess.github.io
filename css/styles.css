@@ -49,7 +49,7 @@
     --bs-warning-rgb: 255, 193, 7;
     --bs-danger-rgb: 220, 53, 69;
     --bs-light-rgb: 248, 249, 250;
-    --bs-dark-rgb: 33, 37, 41;
+    --bs-dark-rgb: 82, 0, 1;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 33, 37, 41;
@@ -73,7 +73,7 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #212529;
+    --bs-body-color: #520001;
     --bs-body-bg: #fff;
     --bs-border-width: 1px;
     --bs-border-style: solid;
@@ -4531,7 +4531,7 @@ fieldset:disabled .btn {
 }
 
 .accordion {
-    --bs-accordion-color: #212529;
+    --bs-accordion-color: #520001;
     --bs-accordion-bg: #fff;
     --bs-accordion-transition:
         color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -4543,7 +4543,7 @@ fieldset:disabled .btn {
     --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
     --bs-accordion-btn-padding-x: 1.25rem;
     --bs-accordion-btn-padding-y: 1rem;
-    --bs-accordion-btn-color: #212529;
+    --bs-accordion-btn-color: #520001;
     --bs-accordion-btn-bg: var(--bs-accordion-bg);
     --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     --bs-accordion-btn-icon-width: 1.25rem;
@@ -11337,7 +11337,7 @@ hr.divider-light {
     color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-    color: #6c757d;
+    color: #520001;
     font-family:
         "Arvo",
         -apple-system,
@@ -11395,7 +11395,7 @@ hr.divider-light {
         color: #f4623a;
     }
     #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-        color: #212529;
+        color: #520001;
     }
     #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
         color: #f4623a;
@@ -11411,7 +11411,7 @@ header.masthead {
             rgb(62 62 62 / 80%) 0%,
             rgb(42 42 42 / 80%) 100%
         ),
-        url(../assets/img/bg.png);
+        url(../assets/img/trolley.png);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
