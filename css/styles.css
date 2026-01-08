@@ -42,7 +42,7 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    --bs-primary-rgb: 244, 98, 58;
+    --bs-primary-rgb: 253, 102, 28;
     --bs-secondary-rgb: 108, 117, 125;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
@@ -55,10 +55,9 @@
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
     --bs-font-sans-serif:
-        "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-        "Noto Color Emoji";
+        "Arvo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace:
         SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
         "Courier New", monospace;
@@ -68,7 +67,7 @@
         rgba(255, 255, 255, 0)
     );
     --bs-body-font-family:
-        Merriweather, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Arvo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
         Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     --bs-body-font-size: 1rem;
@@ -86,7 +85,7 @@
     --bs-border-radius-xl: 1rem;
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
-    --bs-link-color: #f4623a;
+    --bs-link-color: #fd661c;
     --bs-link-hover-color: #c34e2e;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd;
@@ -140,7 +139,7 @@ h1,
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-family:
-        "Merriweather Sans",
+        "Arvo",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -2929,7 +2928,7 @@ textarea.form-control.is-invalid {
     --bs-btn-padding-x: 0.75rem;
     --bs-btn-padding-y: 0.375rem;
     --bs-btn-font-family:
-        Merriweather Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Arvo, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
         Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     --bs-btn-font-size: 1rem;
@@ -3024,7 +3023,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #f4623a;
+    --bs-btn-bg: #fd661c;
     --bs-btn-border-color: #f4623a;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #cf5331;
@@ -5792,7 +5791,7 @@ fieldset:disabled .btn {
     padding: var(--bs-tooltip-arrow-height);
     margin: var(--bs-tooltip-margin);
     font-family:
-        "Merriweather",
+        "Arvo",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -5928,7 +5927,7 @@ fieldset:disabled .btn {
     display: block;
     max-width: var(--bs-popover-max-width);
     font-family:
-        "Merriweather",
+        "Arvo",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -11306,7 +11305,7 @@ hr.divider {
     height: 0.2rem;
     max-width: 3.25rem;
     margin: 1.5rem auto;
-    background-color: #f4623a;
+    background-color: #fd661c;
     opacity: 1;
 }
 
@@ -11321,7 +11320,7 @@ hr.divider-light {
 }
 #mainNav .navbar-brand {
     font-family:
-        "Merriweather Sans",
+        "Arvo",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -11340,7 +11339,7 @@ hr.divider-light {
 #mainNav .navbar-nav .nav-item .nav-link {
     color: #6c757d;
     font-family:
-        "Merriweather Sans",
+        "Arvo",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -11513,7 +11512,7 @@ header.masthead .h1 {
     .portfolio-box-caption
     .project-category {
     font-family:
-        "Merriweather Sans",
+        "Arvo",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
@@ -11550,6 +11549,10 @@ header.masthead .h1 {
     font-size: 3em;
 }
 
+.masthead .logo {
+    width: 80%;
+}
+
 .puzzle-difficulty {
     font-size: 16px !important;
     padding: 5px !important;
@@ -11562,4 +11565,8 @@ header.masthead .h1 {
 
 #puzzle-moveIndicators {
     display: none;
+}
+
+.navbar-brand img {
+    height: 70px;
 }
