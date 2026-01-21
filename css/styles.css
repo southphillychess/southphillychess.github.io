@@ -11563,7 +11563,9 @@ header.masthead .h1 {
     margin: 0 auto;
 }
 
-#puzzle-moveIndicators {
+#puzzle-moveIndicators,
+#puzzle-puzzleSolution,
+#puzzle-puzzleHelp {
     display: none;
 }
 
