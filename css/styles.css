@@ -11563,6 +11563,19 @@ header.masthead .h1 {
     margin: 0 auto;
 }
 
+#puzzle-size-warning {
+    display: none;
+}
+
+@media (max-width: 430px) {
+    #puzzle {
+        display: none;
+    }
+    #puzzle-size-warning {
+        display: block;
+    }
+}
+
 #puzzle-moveIndicators,
 #puzzle-puzzleSolution,
 #puzzle-puzzleHelp {
