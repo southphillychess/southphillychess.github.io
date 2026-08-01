@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -57,3 +57,59 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Function to get current date/time in Eastern Time
+function getEasternDate() {
+    const now = new Date();
+    // Format options to get parts of the date in America/New_York timezone
+    const options = {
+        timeZone: 'America/New_York',
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        weekday: 'long'
+    };
+
+    const formatter = new Intl.DateTimeFormat('en-US', options);
+    const parts = formatter.formatToParts(now);
+
+    const dateParts = {};
+    parts.forEach(part => {
+        dateParts[part.type] = part.value;
+    });
+
+    return {
+        // Create a base date using the Eastern Time year, month, and day at noon to avoid timezone shift issues
+        dateObj: new Date(`${dateParts.month}/${dateParts.day}/${dateParts.year} 12:00:00`),
+        weekday: dateParts.weekday,
+        month: dateParts.month,
+        day: dateParts.day
+    };
+}
+
+function updateNextWednesday() {
+    const eastern = getEasternDate();
+    let targetDate = eastern.dateObj;
+
+    // If today is not Wednesday (getDay() === 3 for Wednesday), calculate the next one
+    if (targetDate.getDay() !== 3) {
+        const dayOfWeek = targetDate.getDay();
+        // Calculate days until next Wednesday
+        const daysUntilWednesday = (3 - dayOfWeek + 7) % 7 || 7;
+        targetDate.setDate(targetDate.getDate() + daysUntilWednesday);
+    }
+
+    // Format as M/D (without leading zeros for standard short format, or use numeric formatting)
+    const month = targetDate.getMonth() + 1;
+    const day = targetDate.getDate();
+    const formattedDate = `${month}/${day}`;
+
+    // Find the element and update its content
+    const element = document.querySelector('.next-wednesday');
+    if (element) {
+        element.textContent = formattedDate;
+    }
+}
+
+// Run on DOM load
+document.addEventListener('DOMContentLoaded', updateNextWednesday);
